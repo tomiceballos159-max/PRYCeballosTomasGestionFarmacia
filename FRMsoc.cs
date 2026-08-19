@@ -27,7 +27,10 @@ namespace PRYCeballosTomasGestionFarmacia
 
         private void FRMsoc_Click(object sender, EventArgs e)
         {
-            lblResultadoCritico.BackColor = Color.Red
+           // lblResultadoCritico.BackColor = Color.Red;
+           // lblResultadoCritico.text = "100%";
         }
+   
+        
     }
 }

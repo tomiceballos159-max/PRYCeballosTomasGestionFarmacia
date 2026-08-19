@@ -39,6 +39,7 @@
             txtCategoria = new TextBox();
             txtPrecio = new TextBox();
             txtCodigo = new TextBox();
+            btnRegistrar = new Button();
             SuspendLayout();
             // 
             // lblPrecio
@@ -131,11 +132,22 @@
             txtCodigo.Size = new Size(100, 23);
             txtCodigo.TabIndex = 18;
             // 
+            // btnRegistrar
+            // 
+            btnRegistrar.Location = new Point(143, 243);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(75, 23);
+            btnRegistrar.TabIndex = 19;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += button1_Click;
+            // 
             // frmCajaDeTexto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(230, 278);
+            Controls.Add(btnRegistrar);
             Controls.Add(txtCodigo);
             Controls.Add(txtPrecio);
             Controls.Add(txtCategoria);
@@ -151,6 +163,7 @@
             MinimizeBox = false;
             Name = "frmCajaDeTexto";
             Text = "Farmacia Version 2";
+            Load += frmCajaDeTexto_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -168,5 +181,6 @@
         private TextBox txtCategoria;
         private TextBox txtPrecio;
         private TextBox txtCodigo;
+        private Button btnRegistrar;
     }
 }

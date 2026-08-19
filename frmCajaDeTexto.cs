@@ -19,5 +19,16 @@ namespace PRYCeballosTomasGestionFarmacia
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("paga rata");
+
+        }
+
+        private void frmCajaDeTexto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
